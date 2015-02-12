@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h1>This is a list of CRUD quotes</h1>
+<% @quotes.each do |quote| %>
+<h3><%= quote[:x] %></h3><a href="/quotes/<%= quote[:id]%>">Change a quote</a>
+<% end %>
+<p>
+  <a href="/quotes/new">Add a new quote!</a>
+</p>
+</body>
+</html>
+

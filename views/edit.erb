@@ -1,0 +1,12 @@
+<h1>CHANGE YOUR QUOTE</h1>
+
+<form action="/quotes/<%= @quote[:id]%>" method="POST">
+<input type="hidden" name="_method" value="put">
+<input type="text" name="quote" id="" value="<%= @quote[:x] %>">
+<input type="submit" value="EDIT">
+</form>
+
+<form action="/quotes/<%= @quote[:id]%>" method="POST">
+<input type="hidden" name="_method" value="delete">
+<input type="submit" value="Delete">
+</form>
